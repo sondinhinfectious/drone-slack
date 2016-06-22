@@ -20,28 +20,28 @@ func main() {
 		cli.StringFlag{
 			Name:   "webhook",
 			Usage:  "slack webhook url",
-			EnvVar: "SLACK_WEBHOOK",
+			EnvVar: "PLUGIN_WEBHOOK,SLACK_WEBHOOK",
 		},
 		cli.StringFlag{
 			Name:   "channel",
 			Usage:  "slack channel",
-			EnvVar: "PLUGIN_CHANNEL",
+			EnvVar: "PLUGIN_CHANNEL,SLACK_CHANNEL",
 		},
 		cli.StringFlag{
 			Name:   "recipient",
 			Usage:  "slack recipient",
-			EnvVar: "PLUGIN_RECIPIENT",
+			EnvVar: "PLUGIN_RECIPIENT,SLACK_RECIPIENT",
 		},
 		cli.StringFlag{
 			Name:   "username",
 			Usage:  "slack username",
 			Value:  "drone",
-			EnvVar: "PLUGIN_USERNAME",
+			EnvVar: "PLUGIN_USERNAME,SLACK_USERNAME",
 		},
 		cli.StringFlag{
 			Name:   "template",
 			Usage:  "slack template",
-			EnvVar: "PLUGIN_TEMPLATE",
+			EnvVar: "PLUGIN_TEMPLATE,SLACK_TEMPLATE",
 		},
 		cli.StringFlag{
 			Name:   "repo.owner",
